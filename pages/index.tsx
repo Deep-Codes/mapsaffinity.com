@@ -7,12 +7,8 @@ import { useEffect, useRef } from "react";
 import Bridge from "../components/Icons/Bridge";
 import Logo from "../components/Icons/Logo";
 import Modal from "../components/Modal";
-import cloudinary from "../utils/cloudinary";
-import getBase64ImageUrl from "../utils/generateBlurPlaceholder";
 import type { ImageProps } from "../utils/types";
 import { useLastViewedPhoto } from "../utils/useLastViewedPhoto";
-import fs from "fs";
-import path from "path";
 import getImagePath from "../utils/getImagePath";
 import getPostsData from "../utils/getPostsData";
 

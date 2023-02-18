@@ -16,7 +16,6 @@ import downloadPhoto from "../utils/downloadPhoto";
 import getImagePath from "../utils/getImagePath";
 import { range } from "../utils/range";
 import type { ImageProps, SharedModalProps } from "../utils/types";
-import Twitter from "./Icons/Twitter";
 
 export default function SharedModal({
   index,
@@ -51,9 +50,7 @@ export default function SharedModal({
 
   const currentPhotoPath = getImagePath(currentImage.filename);
 
-  const origin = window.location.origin;
-
-  const fullImageSrc = `${origin}${currentPhotoPath}`;
+  const fullImageSrc = `${currentPhotoPath}`;
 
   return (
     <MotionConfig
