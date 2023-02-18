@@ -13,6 +13,7 @@ import type { ImageProps } from "../utils/types";
 import { useLastViewedPhoto } from "../utils/useLastViewedPhoto";
 import fs from "fs";
 import path from "path";
+import getPhotosPath from "../utils/getPhotosPath";
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter();
@@ -28,8 +29,6 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
       setLastViewedPhoto(null);
     }
   }, [photoId, lastViewedPhoto, setLastViewedPhoto]);
-
-  console.log({ images });
 
   return (
     <>
@@ -83,7 +82,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               key={id}
               href={`/?photoId=${id}`}
               as={`/p/${id}`}
-              // ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
+              ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
               shallow
               className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
             >
@@ -93,7 +92,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 // placeholder="blur"
                 // blurDataURL={blurDataUrl}
-                src={`/media/${filename}`}
+                src={getPhotosPath(filename)}
                 width={720}
                 height={720}
                 sizes="(max-width: 640px) 100vw,

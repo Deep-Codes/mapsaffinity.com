@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 export interface ImageProps {
-  id: string;
+  id: number;
   title: string;
   filename: string;
   createdAt: number;
