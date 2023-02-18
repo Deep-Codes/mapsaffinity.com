@@ -9,6 +9,8 @@ import type { ImageProps } from "../utils/types";
 import { useLastViewedPhoto } from "../utils/useLastViewedPhoto";
 import getImagePath from "../utils/getImagePath";
 import getPostsData from "../utils/getPostsData";
+import InstagramIcon from "../components/icons/InstagramIcon";
+import GlobeIcon from "../components/icons/GlobeIcon";
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter();
@@ -51,23 +53,49 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           />
         )}
         <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
-          <div className="after:content relative mb-5 flex h-[629px] flex-col items-center justify-center gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-16 pt-64 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-0">
-            <img width={150} src="/maps_affinity.png" alt="" />
-            <h1 className="mt-8 mb-4 text-base font-bold uppercase tracking-widest">
+          <div className="after:content relative mb-5 flex h-[629px] flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-16 pt-64 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-0">
+            <img
+              width={150}
+              src="/maps_affinity.png"
+              alt="Logo of maps_affinity"
+            />
+            {/* <h1 className="mt-8 mb-4 text-base font-bold uppercase tracking-widest">
               maps_affinity
-            </h1>
-            <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              Our incredible Next.js community got together in San Francisco for
-              our first ever in-person conference!
+            </h1> */}
+            <p className="text-white/75 sm:max-w-[50ch]">
+              In May 2019, maps_affinity was created to explore the intersection
+              of design, geography, and politics.
             </p>
-            <a
-              className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
-              href="https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-cloudinary&project-name=nextjs-image-gallery&repository-name=with-cloudinary&env=NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,CLOUDINARY_API_KEY,CLOUDINARY_API_SECRET,CLOUDINARY_FOLDER&envDescription=API%20Keys%20from%20Cloudinary%20needed%20to%20run%20this%20application"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Clone and Deploy
-            </a>
+            <p className="text-white/75 sm:max-w-[50ch]">
+              As the page grew to over 19,000 followers, chloromaps.com{" "}
+              <a
+                className="underline"
+                href="https://dpnkr.in/blog/building-maps-affinity-and-chloromaps"
+              >
+                was created
+              </a>{" "}
+              to help build choropleth visualisations.
+            </p>
+
+            <div>
+              <a
+                className="pointer z-10 mt-6 flex items-center  rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:opacity-80 md:mt-4"
+                href="https://www.instagram.com/maps_affinity/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon />{" "}
+                <span className="ml-2">Explore on Instagram!</span>
+              </a>
+              <a
+                className="pointer z-10 mt-6 flex items-center  rounded-lg border border-white bg-none px-3 py-2 text-sm font-semibold text-white opacity-80 transition hover:bg-white hover:text-black hover:opacity-100 md:mt-4"
+                href="https://chloromaps.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GlobeIcon /> <span className="ml-2">Try Chloromaps.com</span>
+              </a>
+            </div>
           </div>
           {images.map(({ id, createdAt, title, filename }) => (
             <Link
