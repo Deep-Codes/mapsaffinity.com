@@ -13,7 +13,8 @@ import type { ImageProps } from "../utils/types";
 import { useLastViewedPhoto } from "../utils/useLastViewedPhoto";
 import fs from "fs";
 import path from "path";
-import getPhotosPath from "../utils/getPhotosPath";
+import getImagePath from "../utils/getImagePath";
+import getPostsData from "../utils/getPostsData";
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter();
@@ -92,7 +93,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 // placeholder="blur"
                 // blurDataURL={blurDataUrl}
-                src={getPhotosPath(filename)}
+                src={getImagePath(filename)}
                 width={720}
                 height={720}
                 sizes="(max-width: 640px) 100vw,
@@ -141,11 +142,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "/data/data.json");
-  const fileContents = fs.readFileSync(filePath, "utf8");
-
-  // parse the JSON data
-  const data = JSON.parse(fileContents);
+  const data = getPostsData();
 
   return {
     props: {
