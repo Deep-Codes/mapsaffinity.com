@@ -53,6 +53,8 @@ export default function SharedModal({
 
   const origin = window.location.origin;
 
+  const fullImageSrc = `${origin}${currentPhotoPath}`;
+
   return (
     <MotionConfig
       transition={{
@@ -120,7 +122,7 @@ export default function SharedModal({
               <div className="absolute top-0 right-0 flex items-center gap-2 p-3 text-white">
                 {navigation ? (
                   <a
-                    href={`${origin}/${currentPhotoPath}`}
+                    href={fullImageSrc}
                     className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
                     target="_blank"
                     title="Open fullsize version"
@@ -130,7 +132,7 @@ export default function SharedModal({
                   </a>
                 ) : null}
                 <button
-                  onClick={() => downloadPhoto(origin, currentPhotoPath)}
+                  onClick={() => downloadPhoto(fullImageSrc)}
                   className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
                   title="Download fullsize version"
                 >
