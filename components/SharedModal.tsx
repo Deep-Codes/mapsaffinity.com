@@ -81,7 +81,7 @@ export default function SharedModal({
                   width={720}
                   height={720}
                   priority
-                  alt="Next.js Conf image"
+                  alt="Maps Affinity"
                   onLoadingComplete={() => setLoaded(true)}
                 />
               </motion.div>

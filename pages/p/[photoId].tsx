@@ -13,10 +13,16 @@ const Home: NextPage = ({ currentPhoto }: { currentPhoto: ImageProps }) => {
 
   const currentPhotoUrl = getImagePath(currentPhoto.filename);
 
+  const photoTitle = currentPhoto.title.split("\n")[0];
+
   return (
     <>
       <Head>
-        <title>Next.js Conf 2022 Photos</title>
+        <title>
+          {photoTitle} Maps Affintiy | Maps and visualisation around geography,
+          politics and more.
+        </title>
+        <meta name="description" content={currentPhoto.title} />
         <meta property="og:image" content={currentPhotoUrl} />
         <meta name="twitter:image" content={currentPhotoUrl} />
       </Head>
