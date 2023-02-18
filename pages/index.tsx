@@ -69,6 +69,8 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             <p className="text-white/75 sm:max-w-[50ch]">
               As the page grew to over 19,000 followers, chloromaps.com{" "}
               <a
+                target="_blank"
+                rel="noreferrer"
                 className="underline"
                 href="https://dpnkr.in/blog/building-maps-affinity-and-chloromaps"
               >
@@ -79,7 +81,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
             <div>
               <a
-                className="pointer z-10 mt-6 flex items-center  rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:opacity-80 md:mt-4"
+                className="pointer umami--click--mapsaffinity_instagram z-10 mt-6 flex  items-center rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:opacity-80 md:mt-4"
                 href="https://www.instagram.com/maps_affinity/"
                 target="_blank"
                 rel="noreferrer"
@@ -88,7 +90,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                 <span className="ml-2">Explore on Instagram!</span>
               </a>
               <a
-                className="pointer z-10 mt-6 flex items-center  rounded-lg border border-white bg-none px-3 py-2 text-sm font-semibold text-white opacity-80 transition hover:bg-white hover:text-black hover:opacity-100 md:mt-4"
+                className="pointer umami--click--chloromaps z-10 mt-6 flex  items-center rounded-lg border border-white bg-none px-3 py-2 text-sm font-semibold text-white opacity-80 transition hover:bg-white hover:text-black hover:opacity-100 md:mt-4"
                 href="https://chloromaps.com"
                 target="_blank"
                 rel="noreferrer"

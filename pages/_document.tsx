@@ -1,4 +1,4 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -22,14 +22,21 @@ class MyDocument extends Document {
             name="twitter:description"
             content="See pictures from Next.js Conf and the After Party."
           />
+          <script
+            async
+            defer
+            data-domains="mapsaffinity.com"
+            src="https://graphs.dpnkr.in/bruh.js"
+            data-website-id="c7c72c5f-38f5-47d4-b8a6-fc53778df606"
+          ></script>
         </Head>
         <body className="bg-black antialiased">
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
