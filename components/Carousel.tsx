@@ -38,10 +38,10 @@ export default function Carousel({
         onClick={closeModal}
       >
         <Image
+          fill
           src={currentPhotoPath}
           className="pointer-events-none h-full w-full"
           alt="blurred background"
-          fill
           priority={true}
         />
       </button>
