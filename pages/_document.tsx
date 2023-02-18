@@ -8,19 +8,30 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="See pictures from Next.js Conf and the After Party."
+            content="Maps Affintiy | Maps and visualisation around geography, politics and
+            more."
           />
-          <meta property="og:site_name" content="nextjsconf-pics.vercel.app" />
+          <meta property="og:site_name" content="mapsaffinity.com" />
           <meta
             property="og:description"
-            content="See pictures from Next.js Conf and the After Party."
+            content="Maps Affintiy | Maps and visualisation around geography, politics and
+            more."
           />
-          <meta property="og:title" content="Next.js Conf 2022 Pictures" />
+          <meta
+            property="og:title"
+            content="Maps Affintiy | Maps and visualisation around geography, politics and
+          more."
+          />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Next.js Conf 2022 Pictures" />
+          <meta
+            name="twitter:title"
+            content="Maps Affintiy | Maps and visualisation around geography, politics and
+          more."
+          />
           <meta
             name="twitter:description"
-            content="See pictures from Next.js Conf and the After Party."
+            content="Maps Affintiy | Maps and visualisation around geography, politics and
+            more."
           />
           <script
             async
