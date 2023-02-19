@@ -8,14 +8,12 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Maps Affintiy | Maps and visualisation around geography, politics and
-            more."
+            content="Collection of over 330 visualisation around geography, politics and much more."
           />
           <meta property="og:site_name" content="mapsaffinity.com" />
           <meta
             property="og:description"
-            content="Maps Affintiy | Maps and visualisation around geography, politics and
-            more."
+            content="Collection of over 330 visualisation around geography, politics and much more."
           />
           <meta
             property="og:title"
@@ -30,8 +28,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:description"
-            content="Maps Affintiy | Maps and visualisation around geography, politics and
-            more."
+            content="Collection of over 330 visualisation around geography, politics and much more."
           />
           <script
             async
