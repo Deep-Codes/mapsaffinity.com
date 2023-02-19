@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gray2: hsl(0 0% 11%);
+  --gray3: hsl(0 0% 13.6%);
+  --gray4: hsl(0 0% 15.8%);
+}
+
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading='lazy'] {
     clip-path: inset(0.6px);
