@@ -148,15 +148,27 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         </div>
       </main>
       <footer className="p-6 text-center text-white/80 sm:p-12">
-        Built using Vercel's{" "}
-        <a
-          href="https://vercel.com/templates/next.js/image-gallery-starter"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Image gallery starter kit
-        </a>
+        <div>
+          Built using Vercel's{" "}
+          <a
+            href="https://vercel.com/templates/next.js/image-gallery-starter"
+            target="_blank"
+            className="underline hover:text-white"
+            rel="noreferrer"
+          >
+            Image gallery starter kit
+          </a>
+        </div>
+        <div className="mt-2">
+          <a
+            href="https://github.com/Deep-Codes/mapsaffinity.com"
+            target="_blank"
+            className=" underline hover:text-white"
+            rel="noreferrer"
+          >
+            Open sourced on GitHub
+          </a>
+        </div>
       </footer>
     </>
   );
