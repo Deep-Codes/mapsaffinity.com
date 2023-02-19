@@ -79,6 +79,27 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               to help build choropleth visualisations.
             </p>
 
+            <p className="text-white/75 sm:max-w-[50ch]">
+              Posts created by{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+                href="https://twitter.com/DeepankarBhade"
+              >
+                Deepankar
+              </a>{" "}
+              &{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+                href="https://www.linkedin.com/in/varnika-saha"
+              >
+                Varnika
+              </a>
+            </p>
+
             <div>
               <a
                 className="pointer umami--click--mapsaffinity_instagram z-10 mt-6 flex  items-center rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:opacity-80 md:mt-4"
