@@ -126,36 +126,17 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           ))}
         </div>
       </main>
-      {/* <footer className="p-6 text-center text-white/80 sm:p-12">
-        Thank you to{" "}
+      <footer className="p-6 text-center text-white/80 sm:p-12">
+        Built using Vercel's{" "}
         <a
-          href="https://edelsonphotography.com/"
+          href="https://vercel.com/templates/next.js/image-gallery-starter"
           target="_blank"
           className="font-semibold hover:text-white"
           rel="noreferrer"
         >
-          Josh Edelson
+          Image gallery starter kit
         </a>
-        ,{" "}
-        <a
-          href="https://www.newrevmedia.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Jenny Morgan
-        </a>
-        , and{" "}
-        <a
-          href="https://www.garysextonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Gary Sexton
-        </a>{" "}
-        for the pictures.
-      </footer> */}
+      </footer>
     </>
   );
 };
