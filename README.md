@@ -1,31 +1,23 @@
-# Next.js & Cloudinary example app
+# Maps Affinity
 
-This example shows how to create an image gallery site using Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
+![mapsaffinity.com](/public/mapsaffinity.png)
 
-## Deploy your own
+When I was 17 back in 2019 I created an Instagram page called @maps_affinity during my summer break. I used to curate and post content around choropleth visualizations.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or view the demo [here](https://nextconf-images.vercel.app/)
+It peaked a total of over 19,000+ followers, with notable followers like [Jhonny Harris](https://www.youtube.com/channel/UCmGSJVG3mCRXVOP4yZrU1Dw), [India in Pixels](https://www.youtube.com/@iip).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-cloudinary&project-name=nextjs-image-gallery&repository-name=with-cloudinary&env=NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,CLOUDINARY_API_KEY,CLOUDINARY_API_SECRET,CLOUDINARY_FOLDER&envDescription=API%20Keys%20from%20Cloudinary%20needed%20to%20run%20this%20application.)
+mapsaffinity.com was built to preserve all my posts.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How this was built?
 
-## How to use
+I requested all the data from instagram which was around 2.7GB, parsed out all 330 posts with some meta data.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example::
+Gallery was built using Vercel's [Image Gallery Starter Kit](https://vercel.com/templates/next.js/image-gallery-starter) can't thank the team enough.
 
-```bash
- npx create-next-app --example with-cloudinary nextjs-image-gallery
-```
+## Future
 
-```bash
-yarn create next-app --example with-cloudinary nextjs-image-gallery
-```
+if time permits, mostly will prioritise these features.
 
-```bash
-pnpm create next-app --example with-cloudinary nextjs-image-gallery
-```
-
-## References
-
-- Cloudinary API: https://cloudinary.com/documentation/transformation_reference
+- Also show meta data in posts (title, likes etc)
+- Maybe start posting visualisation on the page again :)
+- Search
